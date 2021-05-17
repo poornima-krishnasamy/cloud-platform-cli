@@ -2,7 +2,7 @@
 
 [![Releases](https://img.shields.io/github/release/ministryofjustice/cloud-platform-cli/all.svg?style=flat-square)](https://github.com/ministryofjustice/cloud-platform-cli/releases)
 
-`cloud-platform` is a command-line tool used by the cloud-platform team to achieve common repetitive tasks against the platform. The resulting binary checks things like:
+`cloud-platform` is a command-line tool used by the cloud-platform team and tenants to perform actions on the platform, for example:
 
    - Create templates for the environments repo
    - Divergences in terraform states
@@ -10,6 +10,14 @@
    - Others
 
 ## Install
+
+### Homebrew
+
+```
+brew install ministryofjustice/cloud-platform-tap/cloud-platform-cli
+```
+
+### Manual
 
 These installation instructions are for a Mac. If you have a different kind of
 computer, please amend the steps appropriately.
@@ -19,7 +27,7 @@ number in the badge near the top of this page, and all available releases on
 [this page][github ui].
 
 ```
-RELEASE=1.4.3
+RELEASE=<insert latest release>
 wget https://github.com/ministryofjustice/cloud-platform-cli/releases/download/${RELEASE}/cloud-platform-cli_${RELEASE}_darwin_amd64.tar.gz
 tar xzvf cloud-platform-cli_${RELEASE}_darwin_amd64.tar.gz
 mv cloud-platform /usr/local/bin/
