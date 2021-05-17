@@ -23,9 +23,10 @@ jobs:
         id: go
 
       - name: Run GoReleaser
-        uses: goreleaser/goreleaser-action@v1
+        uses: goreleaser/goreleaser-action@v2
         with:
           version: latest
+          go-version: 1.16
           args: release --rm-dist
           workdir: ./cmd/cloud-platform
         env:
